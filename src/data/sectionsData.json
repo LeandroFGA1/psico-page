@@ -1,0 +1,33 @@
+[
+    {
+        "title":"terapia individual",
+        "image":"person",
+        "content":"Explora tu bienestar emocional en sesiones personalizadas para abordar tus desafíos y alcanzar un mayor bienestar."
+    },
+    {
+        "title":"terapia de pareja",
+        "image":"couple",
+        "content":"Fortalece la conexión y la comunicación en tu relación a través de sesiones diseñadas para parejas, enfocadas en resolver conflictos y mejorar la relación."
+    },
+    {
+        "title":"terapia familiar",
+        "image":"family",
+        "content":"Fomenta la armonía y la comprensión dentro de tu familia. Las sesiones están diseñadas para abordar problemas y fortalecer los lazos familiares."
+    }
+    ,
+    {
+        "title":" Examen Psicotécnico",
+        "image":"exam",
+        "content":"Pruebas estandarizadas, que sirven para medir conductas, capacidades y habilidades de un candidato de cara a una posible contratación."
+    },
+    {
+        "title":"Aptitud Psicológica",
+        "image":"aptitude",
+        "content":"Pruebas estandarizadas, que sirven para medir conductas, capacidades y habilidades de un candidato de cara a una posible contratación."
+    },
+    {
+        "title":"Asesoria",
+        "image":"consultancy",
+        "content":"¿Y ahora qué? ¿Acabas de graduarte y no sabes cómo enfrentarte al mundo laboral? Yo puedo ayudarte."
+    }
+]

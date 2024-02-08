@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+header{
+    margin-top: 60px;
+}
+
+:root{
+    --light-purple:#e2b6e2;
+    --purple :#DC84F3;
+    --opaque-purple: #AC87C5;
+    --orange: #FFBB64
+
+}
+img,svg{
+    width: 50px;
+    height: 50px;
+}
+
+body{
+    font-family: "Darker Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    }
