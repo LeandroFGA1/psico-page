@@ -73,7 +73,6 @@ function Presentation() {
                 
                 <p className='text-presentation'>Con más de 10 años en la práctica clínica, me dedico a proporcionar un espacio seguro y comprensivo para que mis clientes exploren sus emociones y encuentren soluciones efectivas. Mi enfoque terapéutico se basa en...</p>
                 <p className='text-presentation'>A lo largo de mi carrera, me he especializado en áreas como [menciona tus especialidades]. Mi objetivo es colaborar contigo para alcanzar tus metas y mejorar tu bienestar emocional.</p>
-                <span><b>reducir texto, aumentar detalle? revisar luego</b></span>
 
             
             

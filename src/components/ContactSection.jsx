@@ -40,6 +40,7 @@ const ItemContact = styled.li`
     img{
         width: 80px;
         height: 80px;
+        filter: invert(1);
     }
     &:nth-child(1):hover{
         background-color: #1778F2;
