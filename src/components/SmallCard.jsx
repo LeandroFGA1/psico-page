@@ -4,8 +4,12 @@ import directoryImages from "../assets/images/directoryImages"
 
 const CardContainer = styled.div`
     position: relative;
-    width: 300px;
-    height: 200px;
+    width: 30%;
+    min-width: 300px;
+    max-width: 350px;
+    height: 30vh;
+    min-height: 200px;
+    max-height: 250px;
     background-color: var(--opaque-purple);
     border-radius: 10px;
     display: flex;

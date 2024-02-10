@@ -48,7 +48,6 @@ function Presentation() {
             entries.forEach((entry)=>{
                 const targetElement = entry.target;
                 if (entry.isIntersecting){
-                    console.log("se ve la wea")
                     targetElement.classList.add("text-visible")
                 }
             })

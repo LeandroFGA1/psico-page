@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import Home from "../pages/Home"
 import Consultancy from '../pages/Consultancy';
 import Contact from '../pages/Contact';
@@ -28,6 +28,7 @@ function RouterMain() {
       <Route path='/contact' element={<><ScrollToTop/><Contact/></>}/>
       <Route path='/profile' element={<><ScrollToTop/><Profile/></>}/>
       <Route path='/therapy' element={<><ScrollToTop/><Therapy/></>}/>
+      <Route path='/*' element={<Navigate to="/" />} />
       </Routes>
   )
 }

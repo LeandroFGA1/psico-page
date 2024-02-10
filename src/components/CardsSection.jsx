@@ -28,6 +28,7 @@ const HeaderCards = styled.div`
   font-size: 40px;
   h2{
     margin-left: 40px;
+    text-align: center;
   }
 `;
 

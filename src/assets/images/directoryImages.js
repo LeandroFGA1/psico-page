@@ -10,6 +10,10 @@ import aptitude from "./aptitude.svg"
 import exam from "./exam.svg"
 import discussion from "./discussion.svg"
 import profileExample from "./profile_example.jpeg"
+import mind from "./mind.png"
+import mindIdea from "./mind-idea.png"
+import gear from "./gear.svg"
+import bulb from "./bulb.svg"
 export default {
     "email":email,
     "facebook":facebook,
@@ -22,5 +26,9 @@ export default {
     "exam":exam,
     "aptitude":aptitude,
     "consultancy":discussion,
-    "profileExample":profileExample
+    "profileExample":profileExample,
+    "mind":mind,
+    "mindIdea":mindIdea,
+    "gear":gear,
+    "bulb":bulb
 }

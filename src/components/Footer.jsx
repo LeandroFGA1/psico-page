@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from "styled-components"
 import directoryImages from '../assets/images/directoryImages';
-
+import { Link } from 'react-router-dom';
 const FooterContainer = styled.div`
     width: 100%;
     height: fit-content;
@@ -12,6 +12,7 @@ const FooterContainer = styled.div`
     justify-content: space-around;
     gap: 50px;
     font-size: 20px;
+    text-transform: capitalize;
 
     & > div{
         display: flex;
@@ -33,6 +34,10 @@ const FooterContainer = styled.div`
         & > div {
             justify-content: space-around;
         }
+    }
+    a:hover{
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
     }
 `;
 const CentersAttention =styled.div`
@@ -135,7 +140,8 @@ function Footer() {
                     <span>Adulto mayor</span>
                     <div>
                         <span>
-                            Asesoria
+                            <Link to={"/consultancy"}>Asesoria</Link>
+                            
                         </span>
                     </div>
                 </div>
