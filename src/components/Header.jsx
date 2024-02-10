@@ -161,9 +161,9 @@ function Header() {
         
         <HeaderContent>
             <LogoContainer className='flex justify-center items-center'>
-                <a href="">
+                <Link to={"/"}>
                     <img src="#" alt="logo" />
-                </a></LogoContainer>
+                </Link></LogoContainer>
             <input type="checkbox" name="toggle-menu" id="toggle-menu" className='hidden ' checked={isChecked}
                 onChange={() => setIsChecked(!isChecked)} />
             <label htmlFor="toggle-menu">
