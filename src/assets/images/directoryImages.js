@@ -14,6 +14,9 @@ import mind from "./mind.png"
 import mindIdea from "./mind-idea.png"
 import gear from "./gear.svg"
 import bulb from "./bulb.svg"
+import local from "./local.svg"
+import imageNotFound from "./image-not-found.jpg"
+import prueba from "./prueba.png"
 export default {
     "email":email,
     "facebook":facebook,
@@ -30,5 +33,8 @@ export default {
     "mind":mind,
     "mindIdea":mindIdea,
     "gear":gear,
-    "bulb":bulb
+    "bulb":bulb,
+    "local":local,
+    "imageNotFound":imageNotFound,
+    "prueba":prueba
 }

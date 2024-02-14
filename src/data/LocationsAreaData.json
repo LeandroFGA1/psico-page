@@ -1,0 +1,16 @@
+[
+    {
+        "locationArea":"Ciudad",
+        "locationName":"Espacio Salem",
+        "locationAdress":"Arístides Villanueva 480, Mendoza City",
+        "mapGoogle":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d704.300090484927!2d-68.85866280246917!3d-32.89196202217752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0962ca3a7661%3A0x94313f7165a2f95b!2sEspacio%20Salem%20%7C%20CoWorking%20Psi!5e0!3m2!1ses-419!2sar!4v1707593041528!5m2!1ses-419!2sar",
+        "localImages":["prueba","wea2"]
+    },
+    {
+        "locationArea":"Dorrego",
+        "locationName":"Unión Vecinal 4° Barrio Luz y Fuerza",
+        "locationAdress":"Ituzaingó 825, Dorrego",
+        "mapGoogle":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d724.7126572531001!2d-68.83112338113152!3d-32.91944811619749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e095ee563e5e3%3A0x1636d11699af0909!2sUni%C3%B3n%20Vecinal%204%C2%B0%20Barrio%20Luz%20y%20Fuerza!5e0!3m2!1ses-419!2sar!4v1707593580109!5m2!1ses-419!2sar",
+        "localImages":["WEA1","WEA2","prueba"]
+    }
+]

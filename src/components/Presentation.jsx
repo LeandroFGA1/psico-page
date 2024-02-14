@@ -6,7 +6,6 @@ const PresentationContainer = styled.section`
     width: 100%;
     height: fit-content;
     padding-bottom: 100px;
-    background-color: blanchedalmond;
     overflow: hidden;
     h1{
         width: 100%;
@@ -28,7 +27,7 @@ const PresentationContainer = styled.section`
     p{
         font-size: 30px;
         margin: 0 20px;
-        padding-bottom: 100px;
+        padding-bottom: 25px;
     }
     .text-presentation{
         transform: translateY(-30%);

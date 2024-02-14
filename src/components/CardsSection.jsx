@@ -7,7 +7,6 @@ const CardsContainer = styled.div`
   margin: 100px 0;
   width: 100%;
   height: fit-content;
-  background-color: ghostwhite;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;

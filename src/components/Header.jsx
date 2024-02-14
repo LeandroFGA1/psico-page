@@ -91,6 +91,7 @@ const Navbar = styled.nav`
     display: none;
     justify-content: space-around;
     background-color: var(--purple);
+    font-weight: 600;
 `;
 const LogoContainer = styled.div`
     width: 100px;
@@ -105,6 +106,7 @@ const ConsultancyContainer = styled.div`
     span{
         height: 100%;
         margin: 0 15px;
+        
 
     }
     &:hover{

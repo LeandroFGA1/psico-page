@@ -141,6 +141,15 @@ const ConsultyContainer = styled.div `
             font-size: 26px;
         }
     }
+    .owo{
+        margin-left: 50px;
+        height: 300px;
+        width: 300px;
+        iframe{
+            height: 100%;
+            width: 100%;
+        }
+    }
 `;
 
 

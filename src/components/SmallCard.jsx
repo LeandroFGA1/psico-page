@@ -1,12 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import directoryImages from "../assets/images/directoryImages"
+import { Link } from 'react-router-dom';
 
 const CardContainer = styled.div`
     position: relative;
     width: 30%;
     min-width: 300px;
-    max-width: 350px;
+    max-width: 370px;
     height: 30vh;
     min-height: 200px;
     max-height: 250px;
@@ -17,7 +18,8 @@ const CardContainer = styled.div`
     justify-content: center;
     overflow: hidden;
     perspective: 1500px;
-    box-shadow: 0 0 0 5px #ffffff80;
+    border: 1px solid black;
+    box-shadow: 0 0 5px black;
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transition: transform 2s ease-in-out;
 
@@ -33,11 +35,11 @@ const CardContainer = styled.div`
         opacity: 1;
         width: 100%;
         height: 100%;
-        box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+        
     }
 
     .card__content {
-        position: absolute;
+        position: absolute; 
         top: 0;
         left: 0;
         width: 95%;
@@ -66,6 +68,7 @@ const CardContainer = styled.div`
         font-size: 24px;
         color: #333;
         font-weight: 700;
+        text-transform: capitalize;
     }
 
     &:hover > svg {
@@ -107,11 +110,11 @@ function SmallCard({data}) {
     return (
         <CardContainer className='small-card'>
             <img src={directoryImages[data.image]} alt="" />
-            <div class="card__content">
-                <p class="card__title">{data.title}</p>
-                <p class="card__description">
+            <div className="card__content">
+                <p className="card__title">{data.title}</p>
+                <p className="card__description">
                     {data.content}
-                    <a href="#"> ver mas</a>
+                    <Link to={data.to}> ver mas</Link>
                     </p>
             </div>
         </CardContainer>
