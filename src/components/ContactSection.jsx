@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import data from "../data/sectionsData.json"
+import data from "../data/therapyData.json"
 import directory from "../assets/images/directoryImages"
 
 const ContactContainer = styled.div`

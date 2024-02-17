@@ -1,8 +1,12 @@
 import React from 'react'
-
+import TherapySection from '../components/TherapySection'
+import RevisarMasTarde from '../components/RevisarMasTarde'
 function Therapy() {
   return (
-    <div>Therapy</div>
+    <>
+    <TherapySection></TherapySection>
+    <RevisarMasTarde></RevisarMasTarde>
+    </>
   )
 }
 

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import SmallCard from './SmallCard';
-import data from '../data/sectionsData.json';
+import data from "../data/therapyData.json"
 import styled from 'styled-components';
 
 const CardsContainer = styled.div`
@@ -10,7 +10,7 @@ const CardsContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 40px;
   & > div{
     opacity: 0;
     transform: translatex(-20%);

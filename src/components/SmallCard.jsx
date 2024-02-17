@@ -5,117 +5,110 @@ import { Link } from 'react-router-dom';
 
 const CardContainer = styled.div`
     position: relative;
-    width: 30%;
-    min-width: 300px;
-    max-width: 370px;
-    height: 30vh;
-    min-height: 200px;
-    max-height: 250px;
-    background-color: var(--opaque-purple);
+    width: 25%;
+    cursor: pointer;
+    min-width: 250px;
+    height: 50vh;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    perspective: 1500px;
-    border: 1px solid black;
     box-shadow: 0 0 5px black;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition: transform 2s ease-in-out;
-
-    & > img {
-        width: 148px;
-        fill: #333;
-        transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    }
-    &:hover > img{
-        transform: translateY(-100%);
-    }
-    &:hover > .card__content {
-        opacity: 1;
+    background-image: url(${props => props.bgImage});
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--opaque-purple-transparent);
+    display: flex;
+    flex-direction: column-reverse;
+    .overlay{
+        cursor: context-menu;
         width: 100%;
-        height: 100%;
-        
-    }
-
-    .card__content {
-        position: absolute; 
-        top: 0;
-        left: 0;
-        width: 95%;
-        height: 95%;
-        opacity: 0;
-        padding: 20px;
-        box-sizing: border-box;
-        background-color: var(--orange);
-        transform: rotateX(-90deg);
-        transform-origin: bottom;
-        transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        height: 0%;
+        overflow: hidden;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        backdrop-filter: blur(10px);
+        transition: all 0.5s ease-in-out;
         text-align: center;
-        user-select: none;
-    }
-
-    &:hover > .card__content {
-        transform: rotateX(0deg);
-    }
-
-    .card__title {
-        margin: 0;
-        font-size: 24px;
-        color: #333;
-        font-weight: 700;
-        text-transform: capitalize;
-    }
-
-    &:hover > svg {
-        scale: 0;
-    }
-
-    .card__description {
-        margin: 10px 0 0;
-        font-size: 16px;
-        color: black;
-        line-height: 1.4;
-        font-weight: 600;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 255px;
-        
-
-        a{
-            color: black;
-            font-weight: 500;
-            font-size: 20px;
-            padding: 0 5px;
-            text-align: center;
-            background-color: var(--purple);
-            border-radius: 5px;
-            width:fit-content;
-            font-weight: 700;
+        justify-content: space-around;
+        box-shadow: 0 0 10px var(--opaque-purple);
+        .title-card{
+            .title-line-card{
+                width: 50%;
+                height: 5px;
+                background-color: var(--orange);
+                transition-delay: 0.8s;
+                transform: translateX(-110%);
+            }
         }
-        a:hover{
+        h3,p,a,.title-line-card{
+            transition: all 0.5s ease-in;
+        }
+        h3{
+            transform: translateX(-100%);
+            font-size: 40px;
+            transition-delay: 0.5s;
+            font-weight: 600;
+            text-transform: capitalize;
             
         }
+        p{
+            transform: translateX(110%);
+            font-size: 20px;
+            transition-delay: 0.7s;
+            margin: 0 5px;
+            font-weight: 500;
+
+        }
+        a{
+            transform: translateY(170%);
+            width: fit-content;
+            font-size: 20px;
+            transition-delay: 1s;
+            background-color: var(--orange);
+            border-radius: 5px;
+            padding: 3px 10px;
+            align-self: center;
+            font-weight: 800;
+            box-shadow: 0px 0px 3px black;
+            &:hover{
+                box-shadow: 0px 0px 5px black;
+            }
+        }
+        
     }
-
-
+    &:hover{
+        background-position: 220%;
+        .overlay{
+            height: 100%;
+            h3,p{
+                opacity: 1;
+                transform: translateX(0%);
+            }
+            a{
+                opacity: 1;
+                transform: translateY(0%);
+                &:hover{
+                    color:var(--purple);
+                }
+            }
+            .title-line-card{
+                transform: translateX(0%);
+            }
+        }
+    }
+    
 `;
 
 function SmallCard({data}) {
     return (
-        <CardContainer className='small-card'>
-            <img src={directoryImages[data.image]} alt="" />
-            <div className="card__content">
-                <p className="card__title">{data.title}</p>
-                <p className="card__description">
-                    {data.content}
-                    <Link to={data.to}> ver mas</Link>
-                    </p>
+        <CardContainer className='small-card' bgImage={directoryImages[data.image]}>
+            <div className="overlay">
+                <div className="title-card">
+                    <h3>{data.title}</h3>
+                    <div className='title-line-card'></div>
+                </div>
+                
+                <p>{data.content}</p>
+                <Link to={data.to}>Ver mas</Link>
             </div>
         </CardContainer>
     )

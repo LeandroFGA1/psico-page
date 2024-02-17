@@ -1,0 +1,44 @@
+[
+    {
+        "title":"terapia individual",
+        "image":"person",
+        "content":"Explora tu bienestar emocional en sesiones personalizadas para abordar tus desafíos y alcanzar un mayor bienestar.",
+        "to":"/therapy",
+        "expanded_content":"Descubre nuevas formas de entender y gestionar tus emociones en un espacio seguro y confidencial. Las sesiones están diseñadas para abordar tus desafíos específicos y ayudarte a encontrar un mayor bienestar emocional."
+    },
+    {
+        "title":"terapia de pareja",
+        "image":"couple",
+        "content":"Fortalece la conexión y la comunicación en tu relación a través de sesiones diseñadas para parejas, enfocadas en resolver conflictos y mejorar la relación.",
+        "to":"/therapy",
+        "expanded_content":"Mejora la calidad de tu relación a través de sesiones diseñadas para fortalecer la conexión y la comunicación entre tú y tu pareja. En un ambiente de apoyo, trabajaremos juntos para resolver conflictos y construir una relación más sólida y satisfactoria."
+    },
+    {
+        "title":"terapia familiar",
+        "image":"family",
+        "content":"Fomenta la armonía y la comprensión dentro de tu familia. Las sesiones están diseñadas para abordar problemas y fortalecer los lazos familiares.",
+        "to":"/therapy",
+        "expanded_content":"Crea un ambiente de armonía y comprensión en tu hogar a través de sesiones diseñadas para abordar los desafíos familiares y fortalecer los lazos entre los miembros de tu familia. Juntos trabajaremos para superar obstáculos y cultivar relaciones familiares más saludables."
+    },
+    {
+        "title":" Examen Psicotécnico",
+        "image":"exam",
+        "content":"Pruebas estandarizadas, que sirven para medir conductas, capacidades y habilidades de un candidato de cara a una posible contratación.",
+        "to":"/therapy",
+        "expanded_content":"Obtén una evaluación detallada de tus habilidades y comportamientos a través de pruebas psicotécnicas estandarizadas. Estas pruebas te proporcionarán información valiosa para destacarte en procesos de selección y obtener el trabajo que deseas."
+    },
+    {
+        "title":"Aptitud Psicológica",
+        "image":"aptitude",
+        "content":"Pruebas estandarizadas, que sirven para medir conductas, capacidades y habilidades de un candidato de cara a una posible contratación.",
+        "to":"/therapy",
+        "expanded_content":"Descubre tus fortalezas y áreas de mejora a través de pruebas de aptitud psicológica. Estas pruebas te brindarán una comprensión más profunda de tus capacidades y te ayudarán a tomar decisiones informadas sobre tu futuro profesional."
+    },
+    {
+        "title":"Asesoria",
+        "image":"consultancy",
+        "content":"¿Y ahora qué? ¿Acabas de graduarte y no sabes cómo enfrentarte al mundo laboral? Yo puedo ayudarte.",
+        "to":"/consultancy",
+        "expanded_content":"Recibe orientación personalizada para dar tus primeros pasos en el mundo laboral después de graduarte. Desde la búsqueda de empleo hasta el desarrollo de habilidades profesionales, estoy aquí para ayudarte a alcanzar tus objetivos profesionales con confianza y éxito."
+    }
+]
