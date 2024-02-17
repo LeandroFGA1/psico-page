@@ -7,8 +7,11 @@ const CardContainer = styled.div`
     position: relative;
     width: 25%;
     cursor: pointer;
-    min-width: 250px;
+    min-width: 260px;
+    max-width: 400px;
     height: 50vh;
+    min-height: 380px;
+    max-height: 500px;
     border-radius: 10px;
     box-shadow: 0 0 5px black;
     background-image: url(${props => props.bgImage});
@@ -99,6 +102,20 @@ const CardContainer = styled.div`
 `;
 
 function SmallCard({data}) {
+    const checkImageExistence = () => {
+        const imageUrl = directoryImages[data.image];
+        const image = new Image();
+        image.src = imageUrl;
+        image.onload = () => {
+            console.log("existe")
+        };
+        image.onerror = () => {
+            console.log("no existe")
+        };
+    };
+
+    // Llamamos a la función para verificar la existencia de la imagen
+    checkImageExistence();
     return (
         <CardContainer className='small-card' bgImage={directoryImages[data.image]}>
             <div className="overlay">
